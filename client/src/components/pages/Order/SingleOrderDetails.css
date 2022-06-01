@@ -1,0 +1,144 @@
+:root {
+  --dark-color: #181818;
+  --white-color: #ebebeb;
+  --theme-color: #df5201d8;
+}
+
+.singleOrder_heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--theme-color);
+}
+
+.singleOrderBody {
+  padding: 2rem;
+  text-align: left;
+  border: 0.1rem solid var(--theme-color);
+}
+
+.singleOrderBody h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.singleOrderBody h4 span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+
+.shippingInfo {
+  margin: 2rem 0;
+}
+
+.shippingInfo {
+  margin: 2rem 0;
+}
+
+.paymentInfo {
+  margin: 2rem 0;
+
+}
+
+.orderStatusInfo {
+  margin: 2rem 0;
+
+}
+
+.orderItemsInfo {
+  margin-top: 3.4rem;
+  border: 0.1rem solid var(--theme-color);
+
+}
+
+.order_item_body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border-top: 0.1rem solid var(--theme-color);
+}
+
+.order_item_body>p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0 1rem;
+}
+
+.order_item {
+  display: flex;
+  flex-direction: row;
+}
+
+.order_item img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.order_item div p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 1rem;
+}
+
+/* Responsive Design */
+@media only screen and (max-width : 424px) {
+  .singleOrder_heading {
+    font-size: 1.4rem;
+  }
+
+  .singleOrderBody h4 {
+    font-size: 1.2rem;
+  }
+
+  .singleOrderBody h4 span {
+    font-size: 1.2rem;
+  }
+
+  .order_item img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .order_item_body {
+    padding: 0.5rem 1rem;
+  }
+  .order_item_body>p {
+    font-size: 1.1rem;
+  }
+  .order_item div p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width : 425px) and (max-width : 768px) {
+  .singleOrder_heading {
+    font-size: 1.5rem;
+  }
+
+  .singleOrderBody h4 {
+    font-size: 1.3rem;
+  }
+
+  .singleOrderBody h4 span {
+    font-size: 1.3rem;
+  }
+
+  .order_item img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .order_item_body>p {
+    font-size: 1.2rem;
+  }
+
+  .order_item div p {
+    font-size: 1.2rem;
+  }
+}

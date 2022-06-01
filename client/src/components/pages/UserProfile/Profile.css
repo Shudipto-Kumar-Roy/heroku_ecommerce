@@ -1,0 +1,132 @@
+:root {
+  --dark-color: #181818;
+  --white-color: #ebebeb;
+  --theme-color: #df5201d8;
+}
+
+.profileHeading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.profileContainer {
+  background-color: var(--theme-color);
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 5rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.profileInfo {
+  width: 100%;
+  height: 100%;
+}
+
+.profileInfo h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--dark-color);
+  border-bottom: 0.1rem solid var(--dark-color);
+  text-align: left;
+  margin: 3rem 0 0 1rem;
+}
+
+.profileInfo p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--white-color);
+  text-align: left;
+  margin: 1rem 0 0 1rem;
+}
+
+.profileInfo button {
+  width: 100%;
+  margin: 3rem 0 0 1rem;
+}
+
+.profileInfo button a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImage img {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.profileImage img:hover {
+  transform: translateY(-10%);
+}
+
+.profileImage button {
+  display: block;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  border: 0.1rem solid var(--white-color);
+  background-color: transparent;
+}
+
+.profileImage button a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.order_details {
+  height: 20rem;
+  overflow: auto;
+}
+
+.order_details div img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+
+/* Responsive Design */
+
+@media only screen and (max-width : 991px) {
+  .profileContainer {
+    background-color: var(--theme-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .profileInfoContainer{
+    width: 80% !important;
+  }
+  .profileImageContainer{
+    width: 80% !important;
+  }
+  .profileImage{
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,69 @@
+:root{
+  --dark-color : #181818;
+  --white-color : #ebebeb;
+  --theme-color : #df5201d8;
+}
+.createProductContainer{
+  background-color: var(--theme-color);
+  padding: 5rem 0;
+}
+.create_product_heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin: 1rem 0;
+}
+.fromcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formgroup {
+  width: 60rem;
+  height: auto;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.formgroup label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+.formcontroller {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--dark-color) !important;
+  width: 100%;
+  height: auto;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+.formbutton {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--dark-color);
+  padding: 0.5rem 1rem;
+  border: none;
+}
+#images {
+  display: none;
+}
+.imagelabel {
+  cursor: pointer;
+}
+.imagelabel > * {
+  font-size: 3rem;
+}
+.viewimagegroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.viewImage {
+  width: 10rem;
+  height: auto;
+  margin: 0 1rem;
+}

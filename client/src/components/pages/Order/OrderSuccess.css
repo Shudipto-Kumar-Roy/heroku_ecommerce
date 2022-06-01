@@ -1,0 +1,23 @@
+:root {
+    --dark-color: #181818;
+    --white-color: #ebebeb;
+    --theme-color: #df5201d8;
+  }
+.orderSuccessContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.orderSuccessContainer .orderSuccessIcon{
+  font-size: 4rem;
+  color: var(--theme-color);
+  margin-bottom: 1rem;
+}
+.orderSuccessContainer h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--theme-color);
+}

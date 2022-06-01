@@ -1,0 +1,115 @@
+:root {
+  --dark-color: #181818;
+  --white-color: #ebebeb;
+  --theme-color: #df5201d8;
+}
+.dashboard_heading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem;
+  color: var(--dark-color);
+}
+
+.first_row {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.first_row div {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  transform: rotate(45deg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme-color);
+  position: relative;
+}
+
+.first_row div div {
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 0;
+  left: 0;
+}
+
+.first_row div div h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.first_row div div h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.second_row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.second_row div {
+  width: 80rem;
+  height: 40rem;
+}
+
+.third_row {
+  margin-bottom: 5rem;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+}
+
+.third_row div {
+  width: 40rem;
+  height: 40rem;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* Responsive Design */
+@media only screen and (max-width : 480px)
+{
+  .second_row div{
+    height: 20rem;
+  }
+}
+@media only screen and (max-width : 991px)
+{
+  .first_row {
+    justify-content: space-evenly;
+  }
+  
+  .first_row div {
+    width: 8rem;
+    height: 8rem;
+    margin : 2rem;
+  }
+  
+  .first_row div div {
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  
+  .first_row div div h3 {
+    font-size: 1.2rem;
+  }
+  
+  .first_row div div h4 {
+    font-size: 1.1rem;
+  }
+  
+}

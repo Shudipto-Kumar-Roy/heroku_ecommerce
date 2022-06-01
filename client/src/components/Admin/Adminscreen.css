@@ -1,0 +1,16 @@
+:root{
+  --dark-color : #181818;
+  --white-color : #ebebeb;
+  --theme-color : #df5201d8;
+}
+.admin_heading {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+.admincontent {
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
+  background-color: var(--white-color);
+}

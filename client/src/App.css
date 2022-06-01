@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --dark-color: #181818;
+  --white-color: #ebebeb;
+  --theme-color: #df5201d8;
+}
+.whiteButton{
+text-decoration: none;
+padding: 0.5rem 1rem;
+background-color: var(--white-color);
+font-size: 1.4rem;
+font-weight: 400;
+color: var(--dark-color);
+border: none;
+margin: 0 1rem;
+}
+.colorButton{
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--theme-color);
+  font-size: 1.4rem;
+  color: var(--white-color);
+  border-radius: 0.5rem;
+}
+.colorButton:hover{
+  color: var(--white-color);
+}
+
+.main_container
+{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formcontainer
+{
+  width: 30rem;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--theme-color);
+}
+.formtogglegroup
+{
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.toggleborder
+{
+  border-bottom: 0.3rem solid var(--white-color);
+  border-radius: 2rem;
+}
+.formgroup
+{
+  width: 100%;
+}
+.formcontroller
+{
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.2rem solid var(--white-color);
+  color: var(--white-color);
+}

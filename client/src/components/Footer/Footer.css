@@ -1,0 +1,18 @@
+:root {
+    --dark-color: #181818;
+    --white-color: #ebebeb;
+    --theme-color: #df5201d8;
+    --link-color: #0135dfd8;
+}
+
+footer {
+    padding: 2rem;
+    background-color: var(--theme-color);
+}
+
+footer p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    text-align: center;
+}

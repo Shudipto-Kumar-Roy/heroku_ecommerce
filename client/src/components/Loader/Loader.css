@@ -1,0 +1,40 @@
+:root {
+  --dark-color: #181818;
+  --white-color: #ebebeb;
+  --theme-color: #df5201d8;
+  --link-color: #0135dfd8;
+}
+.loadercontainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  position: relative;
+}
+.loader {
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  border-top: 0.5rem solid var(--dark-color);
+  border-radius: 50%;
+  position: absolute;
+  animation: rotateloading 1s linear infinite;
+}
+@keyframes rotateloading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loadercontent {
+  content: "Loading";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+}

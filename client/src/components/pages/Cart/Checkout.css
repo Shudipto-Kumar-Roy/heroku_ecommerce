@@ -1,0 +1,81 @@
+:root {
+    --dark-color: #181818;
+    --white-color: #ebebeb;
+    --theme-color: #df5201d8;
+    --link-color: #0135dfd8;
+  }
+  .checkout_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkout_formcontainer {
+    width: 30rem;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--theme-color);
+  }
+  .formtogglegroup {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .formtogglegroup button {
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background: transparent;
+    color: var(--white-color);
+    border: none;
+  }
+  
+  .formtogglegroup .toggleborder {
+    border-bottom: 0.3rem solid var(--white-color);
+    border-radius: 2rem;
+  }
+  
+  .formgroup {
+    width: 100%;
+  }
+  .loginformbuttongroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .formcontroller {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2rem solid var(--white-color);
+    color: var(--white-color);
+  }
+  .formcontroller::placeholder {
+    color: var(--white-color);
+  }
+  .formgroup .custombutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    border: none;
+    margin-left: 0;
+  }
+  .formgroup .custombutton:hover {
+    background-color: var(--white-color);
+  }
+  select{
+      color : var(--white-color);
+  }
+  option{
+    color: var(--dark-color);
+  }
+  
