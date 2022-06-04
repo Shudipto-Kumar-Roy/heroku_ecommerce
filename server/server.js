@@ -31,7 +31,6 @@ app.use(fileUpload());
 process.on("uncaughtException", (err) => {
   console.log(`Error : ${err.message}`);
   console.log("Sutting down the server due to Uncaught Exception");
-
   process.exit(1);
 });
 

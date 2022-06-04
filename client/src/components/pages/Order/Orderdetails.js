@@ -65,7 +65,7 @@ const Orderdetails = () => {
                         <div className="product_cart " key={product._id}>
                           <div className="product_cart_product">
                             <img
-                              src="https://images.pexels.com/photos/821651/pexels-photo-821651.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                              src={product.image}
                               alt="Show"
                             />
                             <div>
