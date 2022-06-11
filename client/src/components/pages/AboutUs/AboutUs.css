@@ -1,0 +1,79 @@
+:root {
+    --dark-color: #181818;
+    --white-color: #ebebeb;
+    --theme-color: #df5201d8;
+    --link-color: #0135dfd8;
+}
+
+.top_section {
+    width: 100%;
+    height: 60vh;
+}
+
+.top_section>img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bottom_section .aboutus_heading {
+    font-size: 3rem;
+    width: max-content;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 5rem 0;
+    border-radius: 10%;
+    border-bottom: 0.2rem solid var(--theme-color);
+}
+
+.bottom_section .aboutus_subheading {
+    font-size: 1.5rem;
+    width: max-content;
+    font-weight: 400;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+.bottom_section .aboutus_subheading > br{
+    display: none;
+}
+
+.bottom_section h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--theme-color);
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+
+}
+
+.bottom_section p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    text-align: justify;
+    padding: 1rem;
+}
+
+@media only screen and (max-width : 768px) {
+    .bottom_section .aboutus_subheading {
+        font-size: 1.2rem;
+    }
+    .bottom_section .aboutus_subheading > br{
+        display: block;
+    }
+}

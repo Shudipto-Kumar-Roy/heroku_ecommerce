@@ -28,7 +28,7 @@ const LoginSignup = () => {
     email: "",
     password: "",
     confirmpassword: "",
-    avatar : ""
+    avatar: ""
   });
   const [avatarImage, setAvatarImage] = useState("");
   const [avatarPreview, setAvatarPreview] = useState("");
@@ -51,8 +51,8 @@ const LoginSignup = () => {
     if (isValid) {
       const res = await createLoginApi(loginstate, alert); // api call
       if (res.status === 200) {
-        setNavbarState({ ...navbarstate, login: true });
         alert.success("User login successfully");
+        setNavbarState({ ...navbarstate, login: true });
         navigate("/");
       }
     }

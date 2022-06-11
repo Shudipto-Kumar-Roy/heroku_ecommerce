@@ -5,7 +5,7 @@ const {
   logoutController,
   forgotPasswordController,
   resetPasswordController,
-  adminController,
+  accessController,
   getUserDetailsController,
   updatePasswordController,
   updateUserProfileController,
@@ -59,8 +59,8 @@ router.get(
   "/admin",
   isAuthenticatedUser,
   authorizeRoles("admin"),
-  adminController
+  accessController
 );
-router.get("/navbar", isAuthenticatedUser, adminController);
+router.get("/navbar", isAuthenticatedUser, accessController);
 
 module.exports = router;

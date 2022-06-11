@@ -40,6 +40,8 @@ import AllUsers from "./components/Admin/users/AllUsers";
 import UpdateUserRole from "./components/Admin/users/UpdateUserRole";
 import AllReviews from "./components/Admin/reviews/AllReviews";
 import Footer from "./components/Footer/Footer";
+import AboutUs from "./components/pages/AboutUs/AboutUs";
+import ContactUs from "./components/pages/ContactUs/ContactUs";
 
 function App() {
   // for navbar state
@@ -170,6 +172,8 @@ function App() {
                     <Route path="/order/success" element={<OrderSuccess />} />
                     <Route path="/order/myorders" element={<Myorder />} />
                     <Route path="/order/:id" element={<SingleOrderDetails />} />
+                    <Route path="/aboutus" element={<AboutUs />}/>
+                    <Route path="/contactus" element={<ContactUs />}/>
                   </Routes>
 
                   <Footer />

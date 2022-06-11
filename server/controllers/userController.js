@@ -126,7 +126,7 @@ exports.resetPasswordController = catchAsyncErrors(async (req, res, next) => {
 });
 
 // for check admin
-exports.adminController = catchAsyncErrors(async (req, res, next) => {
+exports.accessController = catchAsyncErrors(async (req, res, next) => {
   res.status(200).json({ rootUser: req.user, isAuthenticated: true });
 });
 

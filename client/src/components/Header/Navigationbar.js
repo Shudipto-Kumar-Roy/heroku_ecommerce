@@ -32,21 +32,20 @@ const Navigationbar = () => {
     if (res.status === 200) {
       alert.success("Logged Out");
       setNavbarState({ ...navbarstate, login: false });
-      navigate("/");
+      navigate("/loginsignup");
     }
   };
 
   useEffect(() => {
     const callNavbar = async () => {
       const res = await navbarChangeApi(alert);
-      if (res.status === 200) {
-        setNavbarState({
-          ...navbarstate,
-          login: true,
-          user: res.data.rootUser,
-          isAuthenticated: res.data.isAuthenticated,
-        });
-      }
+      setNavbarState({
+        ...navbarstate,
+        login: true,
+        user: res.data.rootUser,
+        isAuthenticated: res.data.isAuthenticated,
+      });
+
     };
     callNavbar();
   }, [navbarstate.login, cartitem]);

@@ -1,0 +1,69 @@
+:root {
+    --dark-color: #181818;
+    --white-color: #ebebeb;
+    --theme-color: #df5201d8;
+    --link-color: #0135dfd8;
+}
+
+.left_part {
+    width: 100%;
+    height: auto;
+}
+
+.left_part>img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right_part {
+    width: 100%;
+    margin: 3rem 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.right_part h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--theme-color);
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+
+}
+
+.right_part p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    text-align: justify;
+    padding: 1rem;
+}
+
+.right_part .email_container {
+    display: flex;
+    align-items: center;
+}
+
+.right_part .email_container .icon {
+    font-size: 2rem;
+    color: var(--link-color);
+    
+}
+
+.right_part .email_container h2 {
+    color: var(--theme-color);
+    margin-right: 0.5rem;
+}
+.right_part .email_container a {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--link-color);
+    margin-left: 0.5rem;
+}
