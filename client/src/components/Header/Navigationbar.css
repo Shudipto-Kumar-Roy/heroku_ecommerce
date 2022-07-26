@@ -64,6 +64,7 @@ header .mainnavbar {
   color: var(--white-color);
   font-weight: 400;
 }
+
 .navbarcontainer .dropdownlinkitem {
   font-size: 1.4rem;
   text-decoration: none;
@@ -89,7 +90,9 @@ header .mainnavbar {
   display: inline-block;
   width: 3rem;
   height: 3rem;
+  object-fit: contain;
   margin-top: 0.5rem;
+  border: 0.1rem solid var(--white-color);
   border-radius: 50%;
 }
 
@@ -161,9 +164,11 @@ header .mainnavbar {
     width: 100%;
     margin: 0.5rem auto;
   }
+
   .navbarcontainer .nav_link {
     margin: 0;
   }
+
   .navbarcontainer .dropdownlink {
     width: 100%;
     padding: 0;
