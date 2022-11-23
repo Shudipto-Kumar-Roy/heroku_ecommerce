@@ -3,6 +3,7 @@ const cookieParser = require("cookie-parser");
 const cloudinary = require("cloudinary").v2;
 const bodyParser = require("body-parser");
 const path = require("path");
+const cors = required("cors");
 const fileUpload = require("express-fileupload");
 const errorMiddleware = require("./middleware/error");
 const app = express();
@@ -26,6 +27,7 @@ app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 app.use(cookieParser());
 app.use(fileUpload());
+app.use(cors());
 
 // Handeling Uncaught Exception
 process.on("uncaughtException", (err) => {
@@ -48,10 +50,8 @@ app.use("/api/v1", paymentRoute);
 app.use(express.static(path.join(__dirname, "./client/build/")));
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
-})
+});
 // *********** end ** for react site deployment
-
-
 
 //last middleware for error
 app.use(errorMiddleware);
