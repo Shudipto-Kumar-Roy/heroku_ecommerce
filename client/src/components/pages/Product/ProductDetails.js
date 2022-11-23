@@ -42,13 +42,13 @@ const ProductDetails = () => {
 
   useEffect(() => {
     const getProduct = async () => {
-      const {data} = await getSingleProductApi(id, alert); // api call
-        setProductDetailsState({
-          ...productdetailsState,
-          product: data.product,
-          loading: false,
-        });
-      }
+      const { data } = await getSingleProductApi(id, alert); // api call
+      setProductDetailsState({
+        ...productdetailsState,
+        product: data.product,
+        loading: false,
+      });
+    };
     getProduct();
   }, []);
 
@@ -74,6 +74,7 @@ const ProductDetails = () => {
       const productExistInCart = cartproduct.find(
         (product) => product._id === currentProduct._id
       );
+      console.log(productExistInCart);
       if (productExistInCart) {
         return;
       } else {
